@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/mingli/Application.java=UTF-8
+encoding//src/main/java/com/mingli/controller/MingLiController.java=UTF-8
+encoding//src/main/java/com/mingli/dao/BaseDaoImpl.java=UTF-8
+encoding//src/main/java/com/mingli/dao/utils/ClassUtils.java=UTF-8
+encoding//src/main/java/com/mingli/dao/utils/DefaultRowMapper.java=UTF-8
+encoding//src/main/java/com/mingli/dao/utils/NameHandler.java=UTF-8
+encoding//src/main/java/com/mingli/dao/utils/Pager.java=UTF-8
+encoding//src/main/java/com/mingli/dao/utils/SqlContext.java=UTF-8
+encoding//src/main/java/com/mingli/dao/utils/SqlUtils.java=UTF-8
+encoding//src/main/java/com/mingli/model/Table.java=UTF-8
+encoding//src/main/java/com/mingli/test/TestGetAnnotation.java=UTF-8
+encoding//src/main/java/com/mingli/util/SqlToBean.java=UTF-8

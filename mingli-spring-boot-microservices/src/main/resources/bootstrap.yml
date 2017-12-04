@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mingli  #this config is used for OAuth2 microservice invoke context path domain   
+  cloud:
+    config:
+      uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}

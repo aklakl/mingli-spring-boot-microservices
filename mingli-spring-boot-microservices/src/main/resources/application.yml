@@ -1,0 +1,71 @@
+server:
+  port: 8080
+  #contextPath: /root
+  display-name: MingLi's display
+ 
+info:
+  component: MingLi's spring boot Microservices
+  
+logging:
+  file: logs/mingli.log
+  level:
+    com.mingli: INFO
+      
+
+spring:
+  datasource:
+#    url: jdbc:mysql://aurobics-cluster.cluster-ro-cm5yjeedny8s.us-east-1.rds.amazonaws.com/robust_perform?noAccessToProcedureBodies=true
+#    username: LittleServices
+#    password: BouncyLoc_kAbs3ntD!al
+#    driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+
+    url: jdbc:mysql://robust1ria1user.cm5yjeedny8s.us-east-1.rds.amazonaws.com/robustria_db?noAccessToProcedureBodies=true
+    username: LittleServices
+    password: observerS@nsit1veTerminal
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    aeskey: myASASspeDSDcia6DSDS@#%!789!!00
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+  client:
+    registryFetchIntervalSeconds: 5
+    
+##for facebook.
+#security:
+#  oauth2:
+#    client:
+#      clientId: 233668646673605
+#      clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
+#      accessTokenUri: https://graph.facebook.com/oauth/access_token
+#      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+#      tokenName: oauth_token
+#      authenticationScheme: query
+#      clientAuthenticationScheme: form
+#    resource:
+#      userInfoUri: https://graph.facebook.com/me  
+
+
+ 
+
+security:
+  oauth2:
+    client:
+      clientId: robustwealth
+      clientSecret: rwsecret
+      scope: webapp
+
+#      accessTokenUri: http://localhost:9999/auth/uaa/oauth/token
+#      userAuthorizationUri: http://localhost:9999/auth/uaa/oauth/authorize
+#    resource:
+#      userInfoUri: http://localhost:9999/auth/uaa/user   
+      
+      accessTokenUri: http://localhost:8765/auth/uaa/oauth/token
+      userAuthorizationUri: http://localhost:8765/auth/uaa/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8765/auth/uaa/user
+      
+     
+      

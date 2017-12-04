@@ -1,0 +1,32 @@
+{
+  	"name": "RobustWealth's AdvisorSummary services API",
+  	"version": "0.1.0",
+  	"description": "this particular query gets all the basic overview/summary for an advisor when an advisor logs in to the dashboard ",
+  	"title": "RobustWealth's AdvisorSummary services API",
+  	"url" : "https://localhost:8080",
+  	"header": {
+    	"title": "My own header title",
+		"filename": "pom.xml"
+	},
+	"footer": {
+    	"title": "My own footer title",
+		"filename": "pom.xml"
+  	},
+  	"order": [
+    	"GetUser",
+    	"PostUser"
+  	],
+  	"template": {
+    	"withCompare": true,
+    	"withGenerator": true
+  	},
+  	"inputs": [{
+            "lang": "java",
+            "dir": "./",
+            "recursive": true
+	}],
+    "output": {
+        "dir": "./robustWealthDOC",
+        "type": "html"
+    }
+}
