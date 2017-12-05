@@ -32,7 +32,7 @@ public class CustomResouceServerConfig extends ResourceServerConfigurerAdapter {
     	http
 			.antMatcher("/**")
 			.authorizeRequests()
-				.antMatchers("/", "/index.html","/login**", "/webjars/**","/test**","/default**")
+				.antMatchers("/", "/index.html","/login**", "/webjars/**","/test**","/default**","/swagger-ui.html","/api**")
 				.permitAll()
 			.anyRequest()
 				.authenticated();

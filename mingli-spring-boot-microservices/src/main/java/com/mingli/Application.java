@@ -29,10 +29,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @SpringBootApplication
-//@EnableDiscoveryClient
-//@EnableResourceServer
-//@RestController
-//@EnableAutoConfiguration
+@EnableDiscoveryClient
+@EnableResourceServer
+@RestController
+@EnableAutoConfiguration
 public class Application  {//extends WebSecurityConfigurerAdapter 
 
 	

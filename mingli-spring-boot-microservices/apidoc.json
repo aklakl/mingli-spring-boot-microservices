@@ -1,9 +1,10 @@
 {
-  	"name": "RobustWealth's AdvisorSummary services API",
+  	"name": "APIDOC microservices API",
   	"version": "0.1.0",
-  	"description": "this particular query gets all the basic overview/summary for an advisor when an advisor logs in to the dashboard ",
-  	"title": "RobustWealth's AdvisorSummary services API",
+  	"description": "this particular of APIDOC project ",
+  	"title": "This is APIDOC for microservices API",
   	"url" : "https://localhost:8080",
+	"sampleUrl" : "https://localhost:8765",
   	"header": {
     	"title": "My own header title",
 		"filename": "pom.xml"
@@ -26,7 +27,7 @@
             "recursive": true
 	}],
     "output": {
-        "dir": "./robustWealthDOC",
+        "dir": "./APIDOCUMENTATION",
         "type": "html"
     }
 }

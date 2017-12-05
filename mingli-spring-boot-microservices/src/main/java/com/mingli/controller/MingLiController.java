@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mingli.model.EventHistory;
 import com.mingli.service.MingLiService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
 /**
  * 
  * @author MingLi
@@ -25,19 +30,31 @@ import com.mingli.service.MingLiService;
 
 @RestController
 @RequestMapping("/")
+@Api(value="root", description="RobustWealth Holding API")
 public class MingLiController {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(MingLiController.class);
 	
+
+	
 	@Autowired
 	private MingLiService mingLiService;
  
+	
 	@RequestMapping(value = "/default", method = {RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
 	public String defaultMethod() {
 		return "defaultMethod";
 	}
 	
+	@ApiOperation(value = "Get Holding data for Account list",response = String.class)
+	@ApiResponses(value = {
+			@ApiResponse(code = 200, message = "Successfully retrieved holding data"),
+			@ApiResponse(code = 401, message = "You are not authorized to view the resource"),
+			@ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+			@ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
+	}
+	)
 	@RequestMapping(value = "/mingliTestController/{param}", method = {RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
 	public String mingliTestController(@PathVariable String param) {
