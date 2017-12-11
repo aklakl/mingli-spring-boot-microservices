@@ -164,7 +164,7 @@
 		</dependency>
 		<!--  for wiremock test services  end-->
 		
-		<!-- swagger2 plugin for automatic generate api documention -->
+		<!-- swagger2 plugin for automatic generated API documentation -->
 		<dependency>
 		    <groupId>io.springfox</groupId>
 		    <artifactId>springfox-swagger2</artifactId>
