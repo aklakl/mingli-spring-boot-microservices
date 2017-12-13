@@ -54,6 +54,9 @@ eureka:
  
 
 security:
+  user:
+    name: root        # username and password for default spring boot acccess permissions
+    password: root    # username and password for default spring boot acccess permissions
   oauth2:
     client:
       clientId: robustwealth
