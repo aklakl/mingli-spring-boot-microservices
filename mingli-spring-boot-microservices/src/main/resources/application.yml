@@ -10,7 +10,10 @@ logging:
   file: logs/mingli.log
   level:
     com.mingli: INFO
-      
+    
+endpoints:
+    health:
+      sensitive: true  
 
 spring:
   datasource:
