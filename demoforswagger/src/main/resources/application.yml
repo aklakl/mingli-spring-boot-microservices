@@ -1,4 +1,4 @@
 server:
   port: 8080
-  contextPath: /root
+  #contextPath: /root
   display-name: Demo for Swagger display
