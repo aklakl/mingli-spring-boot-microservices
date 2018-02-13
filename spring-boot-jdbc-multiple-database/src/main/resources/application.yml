@@ -1,0 +1,36 @@
+server:
+  port: 8888
+  #contextPath: /root
+  display-name: multiple-database display
+ 
+info:
+  component: spring-boot-jdbc-multiple-database Microservices
+  
+logging:
+  file: logs/mingli.log
+  level:
+    com.mingli: INFO
+      
+
+spring:
+  datasource_mingli1:
+    url: jdbc:mysql://localhost:3306/mingli1?noAccessToProcedureBodies=true
+    username: root
+    password: 
+#    driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+#    aeskey: myASASspeDSDcia6DSDS@#%!789!!00
+  datasource_mingli2:
+    url: jdbc:mysql://localhost:3306/mingli2?noAccessToProcedureBodies=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 
+#    aeskey: myASASspeDSDcia6DSDS@#%!789!!00
+#    driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+  datasource_mingli3:  
+    url: jdbc:mysql://robustwealthqa.cm5yjeedny8s.us-east-1.rds.amazonaws.com/robustria_db?noAccessToProcedureBodies=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: LittleServices
+    password: TenseHereticKing2#
+#    aeskey: myASASspeDSDcia6DSDS@#%!789!!00
+#    driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+      
